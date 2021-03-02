@@ -10,7 +10,7 @@ function App() {
           Esta es mi app hugo 
         </p>
         <p>
-          prueba github page
+       hola steven poveda girata 
         </p>
         
       </header>
