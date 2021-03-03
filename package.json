@@ -2,7 +2,7 @@
   "name": "react-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.softbanana.ml/",
+  "homepage": "https://hugostevenpoveda.github.io/react-example",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -14,7 +14,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy":"npm run build && echo www.softbanana.ml > ./build/CNAME",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
