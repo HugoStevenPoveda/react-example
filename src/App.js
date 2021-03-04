@@ -1,21 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Esta es mi app hugo 
-        </p>
-        <p>
-       hola steven poveda girata 
-        </p>
-        
-      </header>
-    </div>
-  );
-}
+import React from 'react'
+import {
+   BrowserRouter as Router,
+   Route,
+   Switch
+} from 'react-router-dom'
+import './Styles/App1.css';
+import Nav from './Components/Nav'
+import Contacto from './Components/Pages/Contacto'
+import Soluciones from './Components/Pages/Soluciones'
+
+
+
+
+const App = ()=> (
+  
+    <>  
+      <Router>
+            <Nav/>
+            <Switch>
+                <Route path ="/contacto" component={Contacto}    /> 
+                <Route path ="/soluciones" component={Soluciones}   /> 
+                <Route path ="/"> <Home /> </Route>
+            </Switch>
+      </Router>
+
+    
+
+
+    
+      {/*  <Containers title="Hola mundo " text="feliz practicando react" parrafo="probando la conter" />
+       <Enlace />
+       */}
+
+    </>
+   )
+   
+   function Home(){
+         return <h2>Home</h2>
+        }
+   
+  
+   
+   
+   
+  
 
 export default App;
