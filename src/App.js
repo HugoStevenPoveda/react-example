@@ -1,7 +1,8 @@
 
 import React from 'react'
+
 import {
-   BrowserRouter as Router,
+   HashRouter as Router,
    Route,
    Switch
 } from 'react-router-dom'
@@ -25,22 +26,22 @@ const App = ()=> (
             </Switch>
       </Router>
 
-    
-
-
-    
-      {/*  <Containers title="Hola mundo " text="feliz practicando react" parrafo="probando la conter" />
-       <Enlace />
-       */}
-
     </>
    )
-   
+
    function Home(){
          return <h2>Home</h2>
-        }
+      } 
+      
+    
+
+
+    
    
-  
+      
+     
+ 
+       
    
    
    
